@@ -1,0 +1,171 @@
+@import "tailwindcss";
+
+@theme {
+    --color-neutral-50: #FFFCF7;
+    --color-neutral-100: #F5EDE0;
+    --color-neutral-200: #EBDFC9;
+    --color-neutral-300: #DCCBAE;
+    --color-neutral-400: #C4A67C;
+    --color-neutral-500: #A6805A;
+    --color-neutral-600: #86633F;
+    --color-neutral-700: #6B4E32;
+    --color-neutral-800: #4E3A2B;
+    --color-neutral-900: #2A1D15;
+    --color-neutral-950: #1A120C;
+
+    --color-accent-50: #FBEDE2;
+    --color-accent-100: #F5DAC1;
+    --color-accent-200: #EEC49B;
+    --color-accent-300: #E4A873;
+    --color-accent-400: #D89B6C;
+    --color-accent-500: #C67D45;
+    --color-accent-600: #B5652D;
+    --color-accent-700: #965021;
+    --color-accent-800: #78401A;
+    --color-accent-900: #5A3013;
+
+    --color-success-100: #EAF0E6;
+    --color-success-300: #B9CBAE;
+    --color-success-500: #5B7052;
+    --color-success-700: #40501D;
+    --color-success-900: #293413;
+
+    --color-error-100: #F5E0DB;
+    --color-error-300: #DFA791;
+    --color-error-500: #A6432E;
+    --color-error-700: #7A2F1F;
+    --color-error-900: #501C12;
+
+    --font-display: "Fraunces", serif;
+    --font-body: "Plus Jakarta Sans", sans-serif;
+}
+
+/* Fraunces */
+@utility fraunces-96 {
+  font-family: var(--font-display);
+  font-size: 96px;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+}
+
+@utility fraunces-88 {
+  font-family: var(--font-display);
+  font-size: 88px;
+  line-height: 0.92;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+}
+
+@utility fraunces-45 {
+  font-family: var(--font-display);
+  font-size: 45px;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+}
+
+@utility fraunces-28 {
+  font-family: var(--font-display);
+  font-size: 28px;
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  font-weight: 400;
+}
+
+@utility fraunces-22 {
+  font-family: var(--font-display);
+  font-size: 22px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  font-weight: 400;
+}
+
+/* Plus Jakarta Sans */
+@utility jakarta-18 {
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+@utility jakarta-18-medium-italic {
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 500;
+  font-style: italic;
+}
+
+@utility jakarta-16 {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+@utility jakarta-14 {
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+@utility jakarta-14-medium {
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+@utility jakarta-13 {
+  font-family: var(--font-body);
+  font-size: 13px;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+  font-weight: 400;
+}
+
+@utility jakarta-11-medium {
+  font-family: var(--font-body);
+  font-size: 11px;
+  line-height: 1.3;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+}
+
+.container {
+  @apply w-[95%]
+}
+
+.primary-button {
+    @apply bg-neutral-950 text-neutral-50 px-6 py-3 rounded-sm lg:flex lg:items-center lg:gap-1 xl:py-4
+}
+
+.section-spacing {
+    @apply mt-20 xl:mt-40 2xl:mt-44
+}
+
+.cta-button {
+    @apply bg-neutral-50 text-neutral-950 px-5 py-2 rounded-sm flex gap-2 items-center lg:items-center xl:py-4
+}
+
+.category-btn1{
+    @apply bg-neutral-950 border border-neutral-950/15 jakarta-14 px-5 py-2.5 rounded-full cursor-pointer text-neutral-50
+}
+
+.category-btn2{
+    @apply border border-neutral-950/15 jakarta-14 px-5 py-2.5 rounded-full cursor-pointer hover:bg-neutral-950 hover:text-neutral-50 duration-500
+}
+
+.input-style{
+    @apply jakarta-14 border-b-2 border-neutral-950/15 opacity-65 pb-2 focus:outline-none xl:pb-4
+}
+
+.check-box {
+  @apply shrink-0 w-4 h-4 border border-neutral-950 rounded transition-all duration-200 flex items-center justify-center;
+}
+
+.check-description {
+  @apply text-neutral-950/65 underline jakarta-14-medium truncate
+}

@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ink.Art</title>
+  <link rel="icon" type="image/svg" href="/dist/img/logo-white.svg" />
+  <link href="./dist/output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body class="bg-neutral-50 text-neutral-950">
+  <!-- navbar start -->
+    <header class="bg-transparent top-0 left-0 w-full flex items-center z-50">
+      <div class="w-full flex items-center py-5 border-b border-neutral-950/15">
+          <div class="container mx-auto flex items-center justify-between relative">
+              <div class="flex items-center gap-2 relative z-50 xl:gap-4">
+                  <img src="dist/img/logo.svg" alt="" class="w-6 xl:w-7">
+                  <h1 class="fraunces-22">Ink.Art</h1>
+              </div>
+
+              <button id="hamburger" type="button" class="z-50 lg:hidden">
+                  <i class="ri-menu-line text-xl"></i>
+              </button>
+
+              <nav class="hidden fixed inset-0 top-0 z-40 bg-neutral-100 px-6 pt-20 pb-8 lg:pb-0 lg:static lg:z-auto lg:flex lg:w-auto lg:flex-row lg:items-center lg:bg-transparent lg:gap-4 lg:px-0 lg:pt-0 xl:gap-9" id="nav-menu">
+                
+                <ul class="flex flex-col h-full justify-between">
+                    <li class="flex flex-col lg:flex-row gap-4 xl:gap-8">
+                        <a href="index.html" class="jakarta-16 lg:opacity-65 hover:opacity-100 duration-200">Beranda</a>
+                        <a href="gallery.html" class="jakarta-16 lg:opacity-65 hover:opacity-100 duration-200">Galeri</a>
+                        <a href="artist.html" class="jakarta-16 lg:opacity-65 hover:opacity-100 duration-200">Artist</a>
+                        <a href="service.html" class="jakarta-16 lg:opacity-65 hover:opacity-100 duration-200">Layanan</a>
+                        <a href="AboutUs.html" class="jakarta-16 lg:opacity-65 hover:opacity-100 duration-200">Tentang Kami</a>
+                    </li>
+                    <a href="booking.html" id="mobile-booking-btn" class="flex items-center gap-1 bg-neutral-950 text-neutral-50 px-6 py-4 rounded-sm w-full justify-center whitespace-nowrap lg:hidden">
+                        <p class="jakarta-14-medium">Booking</p>
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+                </ul>
+              </nav>
+
+              <a href="booking.html" class="hidden primary-button">
+                <p class="jakarta-14-medium">Booking</p>
+                <i class="ri-arrow-right-up-line"></i>
+              </a>
+          </div>
+      </div>
+    </header>
+  <!-- navbar end -->
+
+  <!-- content start -->
+   <section class="container mx-auto mt-10 xl:mt-20">
+    <div class="flex flex-col gap-8 md:gap-10 xl:gap-14 2xl:gap-16">
+        <div class="flex flex-col gap-2 xl:gap-8">
+            <p class="font-body text-sm font-medium italic lg:jakarta-18-medium-italic">/ Artist Kami</p>
+            <h1 class="font-display text-4xl md:w-[70%] lg:w-[50%] xl:fraunces-88 xl:w-[70%] 2xl:w-[60%]">Orang-Orang di Balik Tinta Kamu.</h1>
+        </div>
+
+        <div class="flex flex-col items-center gap-10 xl:gap-16">
+            <div class="grid grid-cols-2 gap-x-2 gap-y-3 md:grid-cols-4 xl:gap-x-5 xl:gap-y-8 2xl:gap-y-10 2xl:gap-x-6">
+                <div class="flex flex-col gap-2 xl:gap-6">
+                    <img src="dist/img/artist-1.webp" alt="galeri-img" class="">
+                    <h1 class="jakarta-13 xl:jakarta-16">Rangga Aditya</h1>
+                </div>
+                <div class="flex flex-col gap-2 xl:gap-6">
+                    <img src="dist/img/artist-2.webp" alt="galeri-img" class="">
+                    <h1 class="jakarta-13 xl:jakarta-16">Bayu Pratama</h1>
+                </div>
+                <div class="flex flex-col gap-2 xl:gap-6">
+                    <img src="dist/img/artist-3.webp" alt="galeri-img" class="">
+                    <h1 class="jakarta-13 xl:jakarta-16">Made Wirawan</h1>
+                </div>
+                <div class="flex flex-col gap-2 xl:gap-6">
+                    <img src="dist/img/artist-4.webp" alt="galeri-img" class="">
+                    <h1 class="jakarta-13 xl:jakarta-16">Kevin Santoso</h1>
+                </div>
+                <div class="flex flex-col gap-2 xl:gap-6">
+                    <img src="dist/img/artist-5.webp" alt="galeri-img" class="">
+                    <h1 class="jakarta-13 xl:jakarta-16">Doni Prasetyo</h1>
+                </div>
+                <div class="flex flex-col gap-2 xl:gap-6">
+                    <img src="dist/img/artist-6.webp" alt="galeri-img" class="">
+                    <h1 class="jakarta-13 xl:jakarta-16">Arya Nugraha</h1>
+                </div>
+                <div class="flex flex-col gap-2 xl:gap-6">
+                    <img src="dist/img/artist-7.webp" alt="galeri-img" class="">
+                    <h1 class="jakarta-13 xl:jakarta-16">Fajar Ramadhan</h1>
+                </div>
+                <div class="flex flex-col gap-2 xl:gap-6">
+                    <img src="dist/img/artist-8.webp" alt="galeri-img" class="">
+                    <h1 class="jakarta-13 xl:jakarta-16">Yoga Saputra</h1>
+                </div>
+            </div>
+            <a href="#" class="flex items-center bg-neutral-950 text-neutral-50 px-6 py-3 rounded-sm jakarta-11-medium lg:flex lg:items-center lg:gap-1 xl:py-4 xl:jakarta-14-medium">
+                <p>Lihat Lebih Banyak</p>
+                <i class="ri-arrow-right-up-line"></i>
+            </a>
+        </div>
+    </div>
+   </section>
+  <!-- content end -->
+
+  <!-- CTA start -->
+    <section class="section-spacing">
+      <div class="relative">
+        <img src="dist/img/CTA-img-mobile.webp" alt="CTA-img" class="w-auto md:hidden">
+        <img src="dist/img/CTA-img.webp" alt="CTA-img" class="hidden w-screen h-full md:block">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full">
+            <div class="container mx-auto flex flex-col items-center justify-center text-neutral-50 gap-6 xl:gap-12">
+              <div class="flex flex-col items-center justify-center gap-2 xl:gap-4">
+                <p class="font-body text-sm font-medium italic lg:jakarta-18-medium-italic">/  Siap Memulai?</p>
+                <h1 class="fraunces-45 text-center xl:fraunces-88 xl:w-[60%]">Waktunya Bikin Ceritamu Permanen.</h1>
+              </div>
+              <a href="#" class="cta-button">
+                <p class="jakarta-14-medium">Booking Sekarang</p>
+                <i class="ri-arrow-right-up-line"></i>
+              </a>
+            </div>
+        </div>
+      </div>
+    </section>
+  <!-- CTA end -->
+
+  <!-- footer start -->
+   <section class="container mx-auto section-spacing mb-12">
+    <div class="flex flex-col gap-10 xl:gap-24">
+      <div class="flex items-center justify-between">
+        <h1 class="fraunces-45 xl:fraunces-96">Ink.Art</h1>
+        <img src="dist/img/logo.svg" alt="logo" class="w-[12%] md:w-[8%] lg:w-[5%] xl:w-[8%]">
+      </div>
+      <div class="flex flex-col gap-12">
+        <div class="flex flex-col gap-10 xl:flex-row xl:gap-0 xl:justify-between">
+          <div class="grid grid-cols-1 gap-10 md:grid-cols-3 xl:gap-36 2xl:gap-44">
+            <div class="flex flex-col gap-3 xl:gap-6">
+              <p class="jakarta-14 opacity-65">Studio</p>
+              <div class="flex flex-col gap-2 xl:gap-4">
+                <a href="#" class="jakarta-16 xl:jakarta-18">Tentang Kami</a>
+                <a href="#" class="jakarta-16 xl:jakarta-18">Booking</a>
+                <a href="#" class="jakarta-16 xl:jakarta-18">FAQ</a>
+              </div>
+            </div>
+            <div class="flex flex-col gap-3 xl:gap-6">
+              <p class="jakarta-14 opacity-65">Navigasi</p>
+              <div class="flex flex-col gap-2 xl:gap-4">
+                <a href="#" class="jakarta-16 xl:jakarta-18">Beranda</a>
+                <a href="#" class="jakarta-16 xl:jakarta-18">Galeri</a>
+                <a href="#" class="jakarta-16 xl:jakarta-18">Artist</a>
+                <a href="#" class="jakarta-16 xl:jakarta-18">Layanan</a>
+              </div>
+            </div>
+            <div class="flex flex-col gap-3 xl:gap-6">
+              <p class="jakarta-14 opacity-65">Studio</p>
+              <div class="flex flex-col gap-2 xl:gap-4">
+                <a href="#" class="jakarta-16 xl:jakarta-18">Tentang Kami</a>
+                <a href="#" class="jakarta-16 xl:jakarta-18">Booking</a>
+                <a href="#" class="jakarta-16 xl:jakarta-18">FAQ</a>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-3 xl:gap-6">
+            <p class="jakarta-14 opacity-65">Sosial Media</p>
+            <div class="flex items-center gap-2 xl:gap-4">
+              <a href="#" class="text-xl opacity-65 xl:text-2xl"><i class="ri-instagram-line"></i></a>
+              <a href="#" class="text-xl opacity-65 xl:text-2xl"><i class="ri-facebook-circle-line"></i></a>
+              <a href="#" class="text-xl opacity-65 xl:text-2xl"><i class="ri-tiktok-line"></i></a>
+              <a href="#" class="text-xl opacity-65 xl:text-2xl"><i class="ri-youtube-line"></i></a>
+            </div>
+          </div>
+        </div>
+        <hr class="my-4 border border-neutral-950 opacity-15">
+        <div class="flex flex-col gap-4 md:flex-row md:gap-0 md:justify-between">
+          <p class="jakarta-16 xl:jakarta-18 opacity-80">© copyright by Atrem Project</p>
+          <div class="flex items-center justify-between md:justify-normal md:gap-6">
+            <a href="#" class="jakarta-16 xl:jakarta-18 opacity-80">Privacy Policy</a>
+            <a href="#" class="jakarta-16 xl:jakarta-18 opacity-80">Teams of use</a>
+            <a href="#" class="jakarta-16 xl:jakarta-18 opacity-80">Legal</a>
+          </div>
+        </div>
+      </div>
+    </div>
+   </section>
+  <!-- footer end -->
+  
+  <script src="dist/js/script.js"></script>
+</body>
+
+</html>

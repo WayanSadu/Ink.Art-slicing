@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ink.Art</title>
+  <link rel="icon" type="image/svg" href="/dist/img/logo-white.svg" />
+  <link href="./dist/output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body class="bg-neutral-50 text-neutral-950">
+  <!-- navbar start -->
+    <header class="bg-transparent top-0 left-0 w-full flex items-center z-50">
+      <div class="w-full flex items-center py-5 border-b border-neutral-950/15">
+          <div class="container mx-auto flex items-center justify-between relative">
+              <div class="flex items-center gap-2 relative z-50 xl:gap-4">
+                  <img src="dist/img/logo.svg" alt="" class="w-6 xl:w-7">
+                  <h1 class="fraunces-22">Ink.Art</h1>
+              </div>
+
+              <button id="hamburger" type="button" class="z-50 lg:hidden">
+                  <i class="ri-menu-line text-xl"></i>
+              </button>
+
+              <nav class="hidden fixed inset-0 top-0 z-40 bg-neutral-100 px-6 pt-20 pb-8 lg:pb-0 lg:static lg:z-auto lg:flex lg:w-auto lg:flex-row lg:items-center lg:bg-transparent lg:gap-4 lg:px-0 lg:pt-0 xl:gap-9" id="nav-menu">
+                
+                <ul class="flex flex-col h-full justify-between">
+                    <li class="flex flex-col lg:flex-row gap-4 xl:gap-8">
+                        <a href="index.html" class="jakarta-16 lg:opacity-65 hover:opacity-100 duration-200">Beranda</a>
+                        <a href="gallery.html" class="jakarta-16 lg:opacity-65 hover:opacity-100 duration-200">Galeri</a>
+                        <a href="artist.html" class="jakarta-16 lg:opacity-65 hover:opacity-100 duration-200">Artist</a>
+                        <a href="service.html" class="jakarta-16 lg:opacity-65 hover:opacity-100 duration-200">Layanan</a>
+                        <a href="AboutUs.html" class="jakarta-16 lg:opacity-65 hover:opacity-100 duration-200">Tentang Kami</a>
+                    </li>
+                    <a href="booking.html" id="mobile-booking-btn" class="flex items-center gap-1 bg-neutral-950 text-neutral-50 px-6 py-4 rounded-sm w-full justify-center whitespace-nowrap lg:hidden">
+                        <p class="jakarta-14-medium">Booking</p>
+                        <i class="ri-arrow-right-up-line"></i>
+                    </a>
+                </ul>
+              </nav>
+
+              <a href="booking.html" class="hidden primary-button">
+                <p class="jakarta-14-medium">Booking</p>
+                <i class="ri-arrow-right-up-line"></i>
+              </a>
+          </div>
+      </div>
+    </header>
+  <!-- navbar end -->
+
+  <!-- Hero start -->
+   <section class="mt-10 lg:mt-0">
+    <div class="flex flex-col gap-10 lg:flex-row lg:items-center xl:gap-24 2xl:gap-36">
+      <div class="container mx-auto flex flex-col gap-8 lg:pl-[3%] xl:gap-12">
+        <p class="font-body text-sm font-medium italic lg:jakarta-18-medium-italic">/ Booking Layanan Tato</p>
+        <div class="flex flex-col gap-5 md:gap-10 xl:gap-12">
+            <div class="flex flex-col gap-6 md:gap-12 2xl:gap-14">
+                <div class="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-x-10 md:gap-y-12 2xl:gap-14">
+                    <input type="text" placeholder="Masukkan Nama" class="input-style">
+                    <input type="text" placeholder="Masukkan No Telepon" class="input-style">
+                    <select class="input-style">
+                        <option value="" disabled selected>Pilih Layanan</option>
+                        <option>Blackwork</option>
+                        <option>Ornamental</option>
+                        <option>Realism</option>
+                        <option>Fine Line</option>
+                    </select>
+                    <select class="input-style">
+                        <option value="" disabled selected>Pilih Artist</option>
+                        <option>Blackwork</option>
+                        <option>Ornamental</option>
+                        <option>Realism</option>
+                        <option>Fine Line</option>
+                    </select>
+                    <input type="date" placeholder="Masukkan tanggal" class="input-style">
+                    <input type="time" placeholder="Masukkan tanggal" class="input-style">
+                </div>
+                <input type="text" placeholder="Catatan Tambahan (Opsional)" class="input-style">
+            </div>
+
+            <label class="flex items-center cursor-pointer relative gap-2 xl:gap-3">
+                <div class="check-box relative has-checked:bg-neutral-950 has-checked:border-neutral-950">
+                    <input type="checkbox" class="absolute inset-0 opacity-0 cursor-pointer peer"> 
+                    <i class="ri-check-line hidden peer-checked:flex items-center justify-center absolute inset-0 text-white text-[10px] leading-none"></i>
+                </div> 
+                <p class="check-description">Saya berusia 18 tahun ke atas dan telah membaca serta menyetujui kebijakan booking Ink.Art</p> 
+            </label>
+
+            <a href="#" class="flex items-center justify-center bg-neutral-950 text-neutral-50 px-6 py-3 rounded-sm jakarta-11-medium lg:gap-1 xl:py-4 xl:jakarta-14-medium">
+                <p>Lihat Lebih Banyak</p>
+                <i class="ri-arrow-right-up-line"></i>
+            </a>
+        </div>
+      </div>
+      <img src="dist/img/booking-img.webp" alt="Hero-img" class="hidden w-full lg:block lg:w-[40%] 2xl:w-[35%]">
+    </div>
+   </section>
+  <!-- Hero end -->
+
+  <!-- footer start -->
+   <section class="container mx-auto section-spacing mb-12">
+    <div class="flex flex-col gap-10 xl:gap-24">
+      <div class="flex items-center justify-between">
+        <h1 class="fraunces-45 xl:fraunces-96">Ink.Art</h1>
+        <img src="dist/img/logo.svg" alt="logo" class="w-[12%] md:w-[8%] lg:w-[5%] xl:w-[8%]">
+      </div>
+      <div class="flex flex-col gap-12">
+        <div class="flex flex-col gap-10 xl:flex-row xl:gap-0 xl:justify-between">
+          <div class="grid grid-cols-1 gap-10 md:grid-cols-3 xl:gap-36 2xl:gap-44">
+            <div class="flex flex-col gap-3 xl:gap-6">
+              <p class="jakarta-14 opacity-65">Studio</p>
+              <div class="flex flex-col gap-2 xl:gap-4">
+                <a href="#" class="jakarta-16 xl:jakarta-18">Tentang Kami</a>
+                <a href="#" class="jakarta-16 xl:jakarta-18">Booking</a>
+                <a href="#" class="jakarta-16 xl:jakarta-18">FAQ</a>
+              </div>
+            </div>
+            <div class="flex flex-col gap-3 xl:gap-6">
+              <p class="jakarta-14 opacity-65">Navigasi</p>
+              <div class="flex flex-col gap-2 xl:gap-4">
+                <a href="#" class="jakarta-16 xl:jakarta-18">Beranda</a>
+                <a href="#" class="jakarta-16 xl:jakarta-18">Galeri</a>
+                <a href="#" class="jakarta-16 xl:jakarta-18">Artist</a>
+                <a href="#" class="jakarta-16 xl:jakarta-18">Layanan</a>
+              </div>
+            </div>
+            <div class="flex flex-col gap-3 xl:gap-6">
+              <p class="jakarta-14 opacity-65">Studio</p>
+              <div class="flex flex-col gap-2 xl:gap-4">
+                <a href="#" class="jakarta-16 xl:jakarta-18">Tentang Kami</a>
+                <a href="#" class="jakarta-16 xl:jakarta-18">Booking</a>
+                <a href="#" class="jakarta-16 xl:jakarta-18">FAQ</a>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-3 xl:gap-6">
+            <p class="jakarta-14 opacity-65">Sosial Media</p>
+            <div class="flex items-center gap-2 xl:gap-4">
+              <a href="#" class="text-xl opacity-65 xl:text-2xl"><i class="ri-instagram-line"></i></a>
+              <a href="#" class="text-xl opacity-65 xl:text-2xl"><i class="ri-facebook-circle-line"></i></a>
+              <a href="#" class="text-xl opacity-65 xl:text-2xl"><i class="ri-tiktok-line"></i></a>
+              <a href="#" class="text-xl opacity-65 xl:text-2xl"><i class="ri-youtube-line"></i></a>
+            </div>
+          </div>
+        </div>
+        <hr class="my-4 border border-neutral-950 opacity-15">
+        <div class="flex flex-col gap-4 md:flex-row md:gap-0 md:justify-between">
+          <p class="jakarta-16 xl:jakarta-18 opacity-80">© copyright by Atrem Project</p>
+          <div class="flex items-center justify-between md:justify-normal md:gap-6">
+            <a href="#" class="jakarta-16 xl:jakarta-18 opacity-80">Privacy Policy</a>
+            <a href="#" class="jakarta-16 xl:jakarta-18 opacity-80">Teams of use</a>
+            <a href="#" class="jakarta-16 xl:jakarta-18 opacity-80">Legal</a>
+          </div>
+        </div>
+      </div>
+    </div>
+   </section>
+  <!-- footer end -->
+  
+  <script src="dist/js/script.js"></script>
+</body>
+
+</html>
